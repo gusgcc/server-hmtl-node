@@ -18,6 +18,6 @@ app.get("*", (req, res) => {
     res.send("No se encuentra esa pagina")
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log("en puerto 30000");
 });
